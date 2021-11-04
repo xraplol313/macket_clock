@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: #969696;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-family: PT Sans;
+    font-weight: normal;
+}
+
+.header {
+    color: #969696;
+    padding: 7px;
+    background-color: #000;
+    position: relative;
+    text-align: center ;
+    
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13px;    
+}
+
+.header__top-items {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.header__top-item {
+    padding-right: 35px ;
+    
+}
+
+.menu {
+    background: #0F0F0F;
+}
+
+#menu__toggle {
+    display: none;
+}
+
+.menu__toggle {
+    border: 0;
+    background: #0F0F0F;
+    display: none;
+    position: relative;
+}
+
+.menu__toggle::before {
+    content: "Меню";
+    font-family: PT Sans;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #969696;
+}
+
+.menu__toggle label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.menu__items {
+    display: flex;
+}
+
+.menu__item {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.menu__item button {
+    background-color: inherit;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.menu__item a {
+    padding-left: 30px;
+    
+}
+
+.menu__item-link {
+    padding: 27px 19px 34px 13px;
+    transition: all .5s;
+}
+
+.menu__item-link:hover {
+    background: #1F1F1F;
+    transition: all .5s;
+}
+
+.menu__logo {
+    font-family: Imbue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.menu__logo a {
+    color: #fff;
+}
+
+.main {
+    background-image: url(../images/main-bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 810px;
+}
+
+.main > .container,
+.main__wrapper {
+    height: 100%;
+}
+
+.main__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__inner {
+    font-family: Imbue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 53px;
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
+    border: 4px solid #FFFFFF;
+    padding: 50px 30px;
+}
+
+.main__title {
+    font-size: 64px;
+    line-height: 96px;
+}
+
+.main__text {
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-top: 5px;
+    border-top: 2px solid #FFFFFF;
+}
+
+.main__info {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 80px ;
+    max-width: 730px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.collection__inner {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.collection__title,
+.season-title,
+.clock-title,
+.brands__title {
+    font-style: normal;
+    font-family: Imbue;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.collection__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.collection__inner-line,
+.collection__img-line,
+.season__line,
+.brands__line {
+    border-top: solid 1px #ffffff;
+    max-width: 120px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.collection__item {
+    padding: 10px;
+}
+
+.collection__item img {
+    padding: 22px 22px;
+    background: #191B1C;
+}
+
+.collection__name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.collection__price {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.collection__img  {
+    font-family: Imbue;
+    background-image: url(../images/kitaec.png);
+    background-repeat: no-repeat;
+    width: 880px ;
+    min-height: 730px;
+}
+
+.collection__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 100%;
+}
+
+.collection__img-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    max-width: 290px;
+}
+
+.collection__descr-bottom {
+    margin: 0 auto;
+}
+
+.collection__img-button,
+.season__button {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 376px;
+    display: block;
+    margin-top: 60px;
+    padding: 17px 50px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.season__inner {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.season__img {
+    background: url(/images/smoking.png) no-repeat center center;
+    width: 880px;
+    height: 600px;
+    
+}
+
+.season__descr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.season__info {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 40px;
+    max-width: 471px;
+}
+
+.clock {
+    margin: 40px 0;
+}
+
+.brands {
+    padding-top: 30px;
+    background-color: #0F0F0F;
+}
+
+.brands__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    flex-wrap: wrap;
+}
+
+.footer {
+    background-image: url(../images/footer-bg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 30px 0;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__item {
+    max-width: 350px;
+    padding: 10px;
+}
+
+.footer__title {
+    text-align: center;
+    font-style: normal;
+    font-family: Imbue;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 40px ;
+    text-transform: uppercase;
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 37px ;
+}
+
+.footer__elements-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__element-item {
+    padding: 10px 20px;
+    background: #0F0F0F;
+    margin: 5px;
+}
+
+.footer__form-input {
+    height: 42px;
+    padding: 0 15px;
+    border: 1px solid #bcd0e5;
+    max-width: 240px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.4);
+    color: #fff;
+
+}
+
+.footer__form-input::placeholder {
+    color: rgb(189, 185, 184);
+}
+
+.footer__form_btn {
+    padding: 13px 20px;
+    background: #0F0F0F;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 21px;
+
+}
+
+

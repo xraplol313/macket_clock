@@ -1,0 +1,143 @@
+@media(min-width:2560px) {
+    .season__img  {
+        margin-left: 200px;
+    }
+}
+
+@media(max-width:1024px) {
+    .menu__toggle {
+        display: block;
+    }
+    
+    .menu__wrapper ul {
+        display: none;
+    }
+
+    #menu__toggle:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__items {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        opacity: .9;
+        padding: 5%;
+        min-width: 250px;
+        height: 100%;
+    }
+
+    .menu__item {
+        padding: 20px 0;
+    }
+
+    .menu__item a {
+        padding-left: 0;
+    }
+
+    .menu__item img {
+        display: none;
+    }
+
+    .menu__item button {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .menu__item-link:hover {
+        background: inherit;
+    }
+
+    .collection__inner {
+        flex-wrap: wrap;
+    }
+
+    .collection__clock {
+        margin-bottom: 30px;
+    }
+
+    .season__inner {
+        flex-wrap: wrap;
+    }
+
+    .season__img {
+        margin-bottom: 30px;
+    }
+
+    .season__wrapper {
+        margin-bottom: 30px;
+    }
+
+    .brands__items {
+        justify-content: center;
+    }
+}
+
+@media(max-width:768px) {
+    .footer__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width:425px) {
+    .header__top-item {
+        padding-right: 0;
+        padding: 10px;
+    }
+
+    .main__info {
+        line-height: 18px;
+    }
+
+    .season__content {
+        padding: 0 20px;
+    }
+
+    .season__img {
+        display: none;
+    }
+
+    .footer__elements-inner {
+        justify-content: center;
+    }
+}
+
+@media(max-width:375px) {
+    .footer__form-input {
+        max-width: 188px;
+    }
+}
+
+@media(max-width:320px) {
+    .header__top-item {
+        padding: 5px;
+    }
+
+    .menu__items {
+        min-width: 200px;
+    }
+
+    .clock-title {
+        font-size: 29px;
+    }
+
+    .collection__img-title,
+    .season__title {
+        font-size: 30px;
+    }
+
+    .footer__item {
+        text-align: center;
+    }
+
+    .footer__form-input {
+        max-width: 203px;
+    }
+
+    .footer__form_btn {
+        margin-top: 5px;
+    }
+}
